@@ -32,8 +32,8 @@ D:\Dropbox\Project\CMS\bin\CMS.pdb
 D:\Dropbox\Project\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
 D:\Dropbox\Project\CMS\obj\Debug\CMS.dll
 D:\Dropbox\Project\CMS\obj\Debug\CMS.pdb
+D:\New CMS\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
 D:\New CMS\CMS\bin\CMS.dll
 D:\New CMS\CMS\bin\CMS.pdb
-D:\New CMS\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
 D:\New CMS\CMS\obj\Debug\CMS.dll
 D:\New CMS\CMS\obj\Debug\CMS.pdb

@@ -342,6 +342,7 @@
     <Content Include="charisma-master\typography.html" />
     <Content Include="charisma-master\ui.html" />
     <Content Include="UserInterface\Login.aspx" />
+    <Content Include="UserInterface\StaffPortal\AddFile.aspx" />
     <Content Include="UserInterface\StaffPortal\AddVideo.aspx" />
     <Content Include="UserInterface\StaffPortal\demo.aspx" />
     <Content Include="UserInterface\StaffPortal\Staff-home.aspx" />
@@ -625,6 +626,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInterface\StaffPortal\AddFile.aspx.cs">
+      <DependentUpon>AddFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddFile.aspx.designer.cs">
+      <DependentUpon>AddFile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\StaffPortal\AddVideo.aspx.cs">
       <DependentUpon>AddVideo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
