@@ -1,36 +1,31 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserInterface/StaffPortal/Staff.Master" AutoEventWireup="true" CodeBehind="AddVideo.aspx.cs" Inherits="CMS.UserInterface.StaffPortal.AddVideo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserInterface/StaffPortal/Staff.Master"
+    AutoEventWireup="true" CodeBehind="AddVideo.aspx.cs" Inherits="CMS.UserInterface.StaffPortal.AddVideo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-
-<asp:Content ID="Content2" ContentPlaceHolderID="username" runat="server">
-    <div class="btn-group pull-right">
-        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i><span class="hidden-phone">&nbsp;<%= Session["UserName"].ToString() %></span> <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li><a href="#">Profile</a></li>
-            <li class="divider"></li>
-            <li><a href="../login.aspx">Logout</a></li>
-        </ul>
-    </div>
+<asp:Content ID="Content2" ContentPlaceHolderID="title" runat="server">
+    Add Videos / Class
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="form" runat="server">
-<div id="content" class="span10">
-    <!-- content starts -->
-    <div class="row-fluid sortable">
-        <div class="box span12" style="width: 70%">
-            <div class="box-header well">
-                <h2>
-                    <i class="icon-picture"></i>Add Videos / Class
-                </h2>
-            </div>
-            <div id="home" style="display: none" class="box-content">
-                <form id="Form1" class="form-horizontal" runat="server">
+    <div id="content" class="span10">
+        <!-- content starts -->
+        <div class="row-fluid sortable">
+            <div class="box span12" style="width: 70%">
+                <div class="box-header well">
+                    <h2>
+                        <i class="icon-picture"></i>Add Videos / Class
+                    </h2>
+                </div>
+                <div id="home" style="display: none" class="box-content">
+                    <form id="Form1" class="form-horizontal" runat="server">
                     <fieldset>
                         <div class="control-group">
                             <label class="control-label">
                                 Class</label>
                             <div class="controls">
-                                <asp:DropDownList ID="ddlClass" class="input-large span10" AppendDataBoundItems="true" runat="server" OnChange="displayDivByValueOfDDL(this,'Create New Class','addClass','addVideo');enableText();" Style="width: auto;">
+                                <asp:DropDownList ID="ddlClass" class="input-large span10" AppendDataBoundItems="true"
+                                    runat="server" OnChange="displayDivByValueOfDDL(this,'Create New Class','addClass','addVideo');enableText();"
+                                    Style="width: auto;">
                                 </asp:DropDownList>
                             </div>
                         </div>
@@ -42,7 +37,6 @@
                                     <asp:TextBox ID="Text_classTitle" class="input-xlarge focused" runat="server"></asp:TextBox>
                                 </div>
                             </div>
-
                             <div class="control-group">
                                 <label class="control-label">
                                     Class Descrption</label>
@@ -51,7 +45,6 @@
                                         runat="server" Rows="6" Columns="15" />
                                 </div>
                             </div>
-
                             <div class="control-group">
                                 <label class="control-label" for="focusedInput">
                                     Courtesy</label>
@@ -59,11 +52,12 @@
                                     <asp:TextBox ID="Text_courtesy" class="input-xlarge focused" runat="server"></asp:TextBox>
                                 </div>
                             </div>
-
                             <div class="control-group">
-                                <label class="control-label">Associated to Semester</label>
+                                <label class="control-label">
+                                    Associated to Semester</label>
                                 <div class="controls">
-                                    <asp:DropDownList ID="DDL_AssocSemester" runat="server" AppendDataBoundItems="true" data-rel="chosen">
+                                    <asp:DropDownList ID="DDL_AssocSemester" runat="server" AppendDataBoundItems="true"
+                                        data-rel="chosen">
                                         <asp:ListItem Value="">Select Semester</asp:ListItem>
                                         <asp:ListItem Value="1">Sem-1</asp:ListItem>
                                         <asp:ListItem Value="2">Sem-2</asp:ListItem>
@@ -76,13 +70,13 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-
                             <div class="control-group">
                                 <label class="control-label" for="focusedInput">
                                     YouTube Key</label>
                                 <div class="controls">
                                     <asp:TextBox ID="Text_CKey" class="input-xlarge focused" runat="server"></asp:TextBox>
-                                    (e.g "http://www.youtube.com/watch?v=<span style="color: Blue">StphRCLkx6Q</span>" Enter the string in blue from your video URL)
+                                    (e.g "http://www.youtube.com/watch?v=<span style="color: Blue">StphRCLkx6Q</span>"
+                                    Enter the string in blue from your video URL)
                                 </div>
                             </div>
                             <div class="form-actions">
@@ -98,10 +92,10 @@
                                     YouTube Key</label>
                                 <div class="controls">
                                     <asp:TextBox ID="Text_key" class="input-xlarge focused" Enabled="false" runat="server"></asp:TextBox>
-                                    (e.g "http://www.youtube.com/watch?v=<span style="color: Blue">StphRCLkx6Q</span>" Enter the string in blue from your video URL)
+                                    (e.g "http://www.youtube.com/watch?v=<span style="color: Blue">StphRCLkx6Q</span>"
+                                    Enter the string in blue from your video URL)
                                 </div>
                             </div>
-
                             <div class="control-group">
                                 <label class="control-label" for="focusedInput">
                                     Title</label>
@@ -109,7 +103,6 @@
                                     <asp:TextBox ID="Text_title" class="input-xlarge focused" Enabled="false" runat="server"></asp:TextBox>
                                 </div>
                             </div>
-
                             <div class="control-group">
                                 <label class="control-label">
                                     Descrption</label>
@@ -118,7 +111,6 @@
                                         runat="server" Rows="6" Columns="15" />
                                 </div>
                             </div>
-
                             <div class="form-actions">
                                 <asp:Button ID="add_Video" class="btn btn-inverse" runat="server" Text="Add Video"
                                     OnClick="addVideo" />
@@ -130,35 +122,35 @@
                     <script type="text/javascript">
                         function enableText() {
                             if ($("#<%=ddlClass.ClientID%>").val() == "0") {
-                    $("#<%=Text_description.ClientID%>").attr("value", "");
-                    $("#<%=Text_title.ClientID%>").attr("value", "");
-                    $("#<%=Text_key.ClientID%>").attr("value", "");
-                    $("#<%=Text_description.ClientID%>").attr("disabled", "disabled");
-                    $("#<%=Text_title.ClientID%>").attr("disabled", "disabled");
-                    $("#<%=Text_key.ClientID%>").attr("disabled", "disabled");
-                }
-                else if ($("#<%=ddlClass.ClientID%>").val() == "1") {
-                    $("#<%=Text_classTitle.ClientID%>").attr("value", "");
-                    $("#<%=Text_classDescription.ClientID%>").attr("value", "");
-                    $("#<%=Text_courtesy.ClientID%>").attr("value", "");
-                    $("#<%=Text_CKey.ClientID%>").attr("value", "");
-                    $("#<%=Text_description.ClientID%>").removeAttr("disabled");
-                    $("#<%=Text_title.ClientID%>").removeAttr("disabled");
-                    $("#<%=Text_key.ClientID%>").removeAttr("disabled");
-                }
-                else {
-                    $("#<%=Text_description.ClientID%>").removeAttr("disabled");
-                    $("#<%=Text_title.ClientID%>").removeAttr("disabled");
-                    $("#<%=Text_key.ClientID%>").removeAttr("disabled");
-                }
-        }
+                                $("#<%=Text_description.ClientID%>").attr("value", "");
+                                $("#<%=Text_title.ClientID%>").attr("value", "");
+                                $("#<%=Text_key.ClientID%>").attr("value", "");
+                                $("#<%=Text_description.ClientID%>").attr("disabled", "disabled");
+                                $("#<%=Text_title.ClientID%>").attr("disabled", "disabled");
+                                $("#<%=Text_key.ClientID%>").attr("disabled", "disabled");
+                            }
+                            else if ($("#<%=ddlClass.ClientID%>").val() == "1") {
+                                $("#<%=Text_classTitle.ClientID%>").attr("value", "");
+                                $("#<%=Text_classDescription.ClientID%>").attr("value", "");
+                                $("#<%=Text_courtesy.ClientID%>").attr("value", "");
+                                $("#<%=Text_CKey.ClientID%>").attr("value", "");
+                                $("#<%=Text_description.ClientID%>").removeAttr("disabled");
+                                $("#<%=Text_title.ClientID%>").removeAttr("disabled");
+                                $("#<%=Text_key.ClientID%>").removeAttr("disabled");
+                            }
+                            else {
+                                $("#<%=Text_description.ClientID%>").removeAttr("disabled");
+                                $("#<%=Text_title.ClientID%>").removeAttr("disabled");
+                                $("#<%=Text_key.ClientID%>").removeAttr("disabled");
+                            }
+                        }
                     </script>
-                </form>
+                    </form>
+                </div>
             </div>
+            <!--/span-->
         </div>
-        <!--/span-->
+        <!--/row-->
+        <!-- content ends -->
     </div>
-    <!--/row-->
-    <!-- content ends -->
-</div>
 </asp:Content>
