@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StaffRegister.aspx.cs"
-    Inherits="CMS.UserInterface.VirtualClassroom.StaffPortal.StaffRegister" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StudentRegister.aspx.cs" Inherits="CMS.UserInterface.VirtualClassroom.StudentRegister" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -19,7 +18,7 @@
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template." />
     <meta name="author" content="Muhammad Usman" />
     <!-- The styles -->
-    <link href="../Common/css/bootstrap-classic.css" rel="stylesheet" />
+    <link href="../Common/css/bootstrap-cerulean.css" rel="stylesheet" />
     <style type="text/css">
         body {
             padding-bottom: 40px;
@@ -82,24 +81,15 @@
                     <div class="box span12">
                         <div class="box-header well" data-original-title>
                             <h2>
-                                <i class="icon-edit"></i>Staff Registration</h2>
+                                <i class="icon-edit"></i>Student Registration</h2>
                         </div>
                         <div class="box-content">
-                            <form id="Form1" class="form-horizontal" runat="server">
+                            <form class="form-horizontal" runat="server">
                                 <fieldset>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">
-                                            Full Name</label>
+                                        <label class="control-label" for="focusedInput">Full Name</label>
                                         <div class="controls">
                                             <asp:TextBox ID="Text_fullName" class="input-xlarge focused" runat="server"></asp:TextBox>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label" for="date01">
-                                            Birth Date</label>
-                                        <div class="controls">
-                                            <asp:TextBox placeholder="mm/dd/yyyy" ID="Text_bday" class="input-xlarge datepicker"
-                                                runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="control-group">
@@ -110,78 +100,42 @@
                                                 runat="server" Rows="3" Columns="10" />
                                         </div>
                                     </div>
+                                    <div id="enrollVerification" class="control-group">
+                                        <label class="control-label">Enrollment No.</label>
+                                        <div class="controls">
+                                            <asp:TextBox ID="Text_Enroll" class="input-xlarge focused" onblur="verifyField($('[id$=Text_Enroll]')[0].id);" runat="server"></asp:TextBox>
+                                            <span id="enroll_status" class="help-inline"></span>
+                                        </div>
+                                    </div>
                                     <div class="control-group">
-                                        <label class="control-label">
-                                            Contact Number</label>
+                                        <label class="control-label" for="Text_bday">
+                                            Birth Date</label>
+                                        <div class="controls">
+                                            <asp:TextBox placeholder="mm/dd/yyyy" ID="Text_bday" class="input-xlarge datepicker"
+                                                runat="server"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Contact Number</label>
                                         <div class="controls">
                                             <asp:TextBox ID="Text_contact" class="input-xlarge focused" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
-                                    <div class="control-group">
-                                        <label class="control-label">
-                                            Emergency Contact Number</label>
-                                        <div class="controls">
-                                            <asp:TextBox ID="Text_emer" class="input-xlarge focused" runat="server"></asp:TextBox>
-                                        </div>
-                                    </div>
                                     <div id="emailVerification" class="control-group">
-                                        <label class="control-label">
-                                            Email Id</label>
+                                        <label class="control-label">Email Id</label>
                                         <div class="controls">
                                             <asp:TextBox ID="Text_email" class="input-xlarge focused" onblur="verifyField($('[id$=Text_email]')[0].id);" runat="server"></asp:TextBox>
-                                            <span id="status" class="help-inline"></span>
+                                            <span id="email_status" class="help-inline"></span>
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label">
-                                            Password</label>
+                                        <label class="control-label">Password</label>
                                         <div class="controls">
-                                            <asp:TextBox ID="Text_pwd" class="input-xlarge focused" TextMode="Password" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="Text_pwd" class="input-xlarge focused" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label">
-                                            Confirm Password</label>
-                                        <div class="controls">
-                                            <asp:TextBox ID="Text_cpwd" class="input-xlarge focused" TextMode="Password" runat="server"></asp:TextBox>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label">
-                                            Joining Year</label>
-                                        <div class="controls">
-                                            <asp:TextBox ID="Text_join_year" class="input-xlarge focused" runat="server"></asp:TextBox>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label">
-                                            Role</label>
-                                        <div class="controls">
-                                            <asp:DropDownList ID="DDL_role" runat="server" AppendDataBoundItems="true" data-rel="chosen">
-                                                <asp:ListItem Value="">Select Type</asp:ListItem>
-                                                <asp:ListItem Value="New">New</asp:ListItem>
-                                                <asp:ListItem Value="Regular">Regular</asp:ListItem>
-                                                <asp:ListItem Value="HOD">HOD</asp:ListItem>
-                                                <asp:ListItem Value="Principal">Principal</asp:ListItem>
-                                            </asp:DropDownList>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label">
-                                            Type</label>
-                                        <div class="controls">
-                                            <asp:DropDownList ID="DDL_designation" runat="server" AppendDataBoundItems="true"
-                                                data-rel="chosen">
-                                                <asp:ListItem Value="">Select Designation</asp:ListItem>
-                                                <asp:ListItem Value="Professor">Professor</asp:ListItem>
-                                                <asp:ListItem Value="Assistant Professor">Assistant Professor</asp:ListItem>
-                                                <asp:ListItem Value="Associate Professor">Associate Professor</asp:ListItem>
-                                            </asp:DropDownList>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label">
-                                            Department</label>
+                                        <label class="control-label">Department</label>
                                         <div class="controls">
                                             <asp:DropDownList ID="DDL_dept" runat="server" AppendDataBoundItems="true" data-rel="chosen">
                                                 <asp:ListItem Value="0">Select Department</asp:ListItem>
@@ -196,8 +150,29 @@
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label">
-                                            Gender</label>
+                                        <label class="control-label">Year Of Admission</label>
+                                        <div class="controls">
+                                            <asp:TextBox ID="Text_year" class="input-xlarge focused" runat="server"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Semester</label>
+                                        <div class="controls">
+                                            <asp:DropDownList ID="DDL_semester" runat="server" AppendDataBoundItems="true" data-rel="chosen">
+                                                <asp:ListItem Value="">Select Semester</asp:ListItem>
+                                                <asp:ListItem Value="1">Sem-1</asp:ListItem>
+                                                <asp:ListItem Value="2">Sem-2</asp:ListItem>
+                                                <asp:ListItem Value="3">Sem-3</asp:ListItem>
+                                                <asp:ListItem Value="4">Sem-4</asp:ListItem>
+                                                <asp:ListItem Value="5">Sem-5</asp:ListItem>
+                                                <asp:ListItem Value="6">Sem-6</asp:ListItem>
+                                                <asp:ListItem Value="7">Sem-7</asp:ListItem>
+                                                <asp:ListItem Value="8">Sem-8</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Gender</label>
                                         <div class="controls">
                                             <asp:DropDownList ID="DDL_gender" runat="server" AppendDataBoundItems="true" data-rel="chosen">
                                                 <asp:ListItem Value="">Select Gender</asp:ListItem>
@@ -207,8 +182,7 @@
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label">
-                                            Category</label>
+                                        <label class="control-label">Category</label>
                                         <div class="controls">
                                             <asp:DropDownList ID="DDL_category" runat="server" AppendDataBoundItems="true" data-rel="chosen">
                                                 <asp:ListItem Value="">Select Category</asp:ListItem>
@@ -221,8 +195,35 @@
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label">
-                                            Blood Group</label>
+                                        <label class="control-label">Type</label>
+                                        <div class="controls">
+                                            <asp:DropDownList ID="DDL_type" runat="server" AppendDataBoundItems="true" data-rel="chosen">
+                                                <asp:ListItem Value="">Select Type</asp:ListItem>
+                                                <asp:ListItem Value="Regular">Regular</asp:ListItem>
+                                                <asp:ListItem Value="D2D">D2D</asp:ListItem>
+                                                <asp:ListItem Value="Transferred">Transferred</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Merit Rank</label>
+                                        <div class="controls">
+                                            <asp:TextBox ID="Text_merit" class="input-xlarge focused" runat="server"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Board</label>
+                                        <div class="controls">
+                                            <asp:DropDownList ID="DDL_board" runat="server" AppendDataBoundItems="true" data-rel="chosen">
+                                                <asp:ListItem Value="">Select Board</asp:ListItem>
+                                                <asp:ListItem Value="GSEB">GSEB</asp:ListItem>
+                                                <asp:ListItem Value="CBSE">CBSE</asp:ListItem>
+                                                <asp:ListItem Value="ICSE">ICSE</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Blood Group</label>
                                         <div class="controls">
                                             <asp:DropDownList ID="DDL_blood" runat="server" AppendDataBoundItems="true" data-rel="chosen">
                                                 <asp:ListItem Value="">Select Blood Group</asp:ListItem>
@@ -238,17 +239,62 @@
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label">
-                                            &nbsp;&nbsp;Is Teaching Staff</label>
+                                        <label class="control-label">Emergency Contact Number</label>
                                         <div class="controls">
-                                            <asp:CheckBox ID="Check_ITS" runat="server" />
+                                            <asp:TextBox ID="Text_emer" class="input-xlarge focused" runat="server"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Division</label>
+                                        <div class="controls">
+                                            <asp:DropDownList ID="DDL_div" runat="server" AppendDataBoundItems="true" data-rel="chosen">
+                                                <asp:ListItem Value="">Select Division</asp:ListItem>
+                                                <asp:ListItem Value="N/A">N/A</asp:ListItem>
+                                                <asp:ListItem Value="A">A</asp:ListItem>
+                                                <asp:ListItem Value="B">B</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Batch</label>
+                                        <div class="controls">
+                                            <asp:TextBox ID="Text_batch" class="input-xlarge focused" runat="server"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Passport Number</label>
+                                        <div class="controls">
+                                            <asp:TextBox ID="Text_passport" class="input-xlarge focused" runat="server"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Unique ID</label>
+                                        <div class="controls">
+                                            <asp:TextBox ID="Text_unique" class="input-xlarge focused" runat="server"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">TFW</label>
+                                        <div class="controls">
+                                            <asp:CheckBox ID="Check_tfw" runat="server" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Defence</label>
+                                        <div class="controls">
+                                            <asp:CheckBox ID="Check_def" runat="server" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">&nbsp;&nbsp;Physically Disabled</label>
+                                        <div class="controls">
+                                            <asp:CheckBox ID="Check_pd" runat="server" />
                                         </div>
                                     </div>
                                     <div class="form-actions">
                                         <asp:Button ID="Submit" class="btn btn-primary" runat="server" Text="Register"
                                             OnClick="Submit_Click" />
-                                        <button class="btn">
-                                            Cancel</button>
+                                        <button class="btn">Cancel</button>
                                     </div>
                                 </fieldset>
                             </form>
@@ -278,45 +324,88 @@
                 <a href="#" class="btn" data-dismiss="modal">Close</a> <a href="#" class="btn btn-primary">Save changes</a>
             </div>
         </div>
+        <%--<footer>
+			<p class="pull-left">&copy; <a href="http://usman.it" target="_blank">Muhammad Usman</a> 2012</p>
+			<p class="pull-right">Powered by: <a href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
+		</footer>--%>
     </div>
     <!--/.fluid-container-->
     <!-- external javascript
 	================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript">
-        function checkEmail(email) {
+
+        //Validation Functions
+
+        function validateEmail(email) {
             var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             if (!filter.test(email)) {
                 return false;
             }
             return true;
         }
+        function validateEnroll(enroll) {
+            var Pattern = /^\d+$/;
+            if (!Pattern.test(enroll)) {
+                alert("Enter Correct Enrollment Number");
+                return false;
+            }
+            return true;
+        }
 
-        function highlight(value) {
+        //Field Highlighting Functions
+
+        function highlightEmail(value) {
             if (value == "Not Available in Database") {
-                if (checkEmail($('#<%=Text_email.ClientID%>').val())) {
+                if (validateEmail($('#<%=Text_email.ClientID%>').val())) {
                     document.getElementById('emailVerification').setAttribute("class", "control-group success");
-                    $("#status").text("Email Id Available!");
+                    $("#email_status").text("Email Id Available!");
                 } else {
                     document.getElementById('emailVerification').setAttribute("class", "control-group error");
-                    $("#status").text("Incorrect Email Id!");
+                    $("#email_status").text("Incorrect Email Id!");
                 }
             }
             else if (value == "") {
                 document.getElementById('emailVerification').setAttribute("class", "control-group warning");
-                $("#status").text("You cannot leave Email Field Blank!");
+                $("#email_status").text("You cannot leave Email Field Blank!");
             }
             else {
                 document.getElementById('emailVerification').setAttribute("class", "control-group error");
-                $("#status").text("Email Id Not Available!");
+                $("#email_status").text("Email Id Already Used!");
             }
         }
-        
+
+        function highlightEnroll(value) {
+            if (value == "Not Available in Database") {
+                if (validateEnroll($('#<%=Text_Enroll.ClientID%>').val())) {
+                    document.getElementById('enrollVerification').setAttribute("class", "control-group success");
+                    $("#enroll_status").text("Enrollment No. Available!");
+                } else {
+                    document.getElementById('enrollVerification').setAttribute("class", "control-group error");
+                    $("#enroll_status").text("Incorrect Enrollment No!");
+                }
+            }
+            else if (value == "") {
+                document.getElementById('enrollVerification').setAttribute("class", "control-group warning");
+                $("#enroll_status").text("You cannot leave This Field Blank!");
+            }
+            else {
+                document.getElementById('enrollVerification').setAttribute("class", "control-group error");
+                $("#enroll_status").text("Enrollment No Already Exists!");
+            }
+        }
+
+        //Field Verifying Functions
+
         function verifyField(textbox_id) {
-            var pageUrl = '<%=ResolveUrl("~/UserInterface/StaffPortal/StaffRegister.aspx")%>'
-            var name = '/verifyField';
+            var pageUrl = '<%=ResolveUrl("~/UserInterface/StudentPortal/StudentRegister.aspx")%>'
+            var name;
+            if (textbox_id == "Text_email") {
+                name = '/verifyEmail';
+            }
+            else if (textbox_id == "Text_Enroll") {
+                name = '/verifyEnrol';
+            }
             var verifyfield = '{verifyfield:"' + document.getElementById(textbox_id).value + '"}';
-        
             $.ajax({
                 type: "POST",
                 url: pageUrl + name,
@@ -324,30 +413,49 @@
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (response) {
-        
-                    load(response.d);
+                    if (textbox_id == "Text_email") {
+                        loadEmail(response.d);
+                    }
+                    else if (textbox_id == "Text_Enroll") {
+                        loadEnroll(response.d);
+                    }
+                    
                 },
                 failure: function (response) {
                     alert(response.d);
                 }
             });
         }
-        function load(list) {
+        function loadEmail(list) {
             if (list.length > 0) {
                 $.each(list, function () {
-                    highlight(this['Value']);
+                    highlightEmail(this['Value']);
                 });
             }
             else {
                 if ($('#<%=Text_email.ClientID%>').val() == '') {
-                        highlight("");
-                    } else {
-                        //alert("Something Went Wrong!!");
-                        highlight("Not Available in Database");
-                    }
+                    highlightEmail("");
+                } else {
+                    highlightEmail("Not Available in Database");
                 }
             }
+        }
+        function loadEnroll(list) {
+            if (list.length > 0) {
+                $.each(list, function () {
+                    highlightEnroll(this['Value']);
+                });
+            }
+            else {
+                if ($('#<%=Text_Enroll.ClientID%>').val() == '') {
+                    highlightEnroll("");
+                } else {
+                    highlightEnroll("Not Available in Database");
+                }
+            }
+        }
     </script>
+    <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery -->
     <script type="text/javascript" src="../Common/js/jquery-1.7.2.min.js"></script>
     <!-- jQuery UI -->

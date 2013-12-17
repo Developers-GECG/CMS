@@ -22,6 +22,15 @@ namespace CMS.UserInterface.StaffPortal {
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
         
         /// <summary>
+        /// ddlClass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlClass;
+        
+        /// <summary>
         /// Text_classTitle control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace CMS.UserInterface.StaffPortal {
         protected global::System.Web.UI.WebControls.TextBox Text_courtesy;
         
         /// <summary>
+        /// DDL_AssocSemester control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_AssocSemester;
+        
+        /// <summary>
         /// Text_CKey control.
         /// </summary>
         /// <remarks>
@@ -65,15 +83,6 @@ namespace CMS.UserInterface.StaffPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button add_Class;
-        
-        /// <summary>
-        /// ddlClass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlClass;
         
         /// <summary>
         /// Text_key control.

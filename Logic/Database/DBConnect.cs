@@ -22,7 +22,7 @@ namespace CMS.Logic.Database
         public DBConnect(String conStr)
         {
             this.setConnectionString(conStr);
-            this.con = new MySqlConnection(connectionString);
+            this.con = new MySqlConnection(conStr);
         }
 
         public void setConnectionString(String con_string)

@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace CMS
+namespace CMS.UserInterface.StaffPortal
 {
-    public partial class Student : System.Web.UI.MasterPage
+    public partial class simple : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

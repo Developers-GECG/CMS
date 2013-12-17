@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CMS.UserInterface.VirtualClassroom.StaffPortal {
+namespace CMS.UserInterface.VirtualClassroom {
     
     
-    public partial class StaffRegister {
+    public partial class StudentRegister {
         
         /// <summary>
         /// Head1 control.
@@ -22,15 +22,6 @@ namespace CMS.UserInterface.VirtualClassroom.StaffPortal {
         protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
         
         /// <summary>
-        /// Form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
-        
-        /// <summary>
         /// Text_fullName control.
         /// </summary>
         /// <remarks>
@@ -38,15 +29,6 @@ namespace CMS.UserInterface.VirtualClassroom.StaffPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Text_fullName;
-        
-        /// <summary>
-        /// Text_bday control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_bday;
         
         /// <summary>
         /// Text_Address control.
@@ -58,6 +40,24 @@ namespace CMS.UserInterface.VirtualClassroom.StaffPortal {
         protected global::System.Web.UI.WebControls.TextBox Text_Address;
         
         /// <summary>
+        /// Text_Enroll control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Text_Enroll;
+        
+        /// <summary>
+        /// Text_bday control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Text_bday;
+        
+        /// <summary>
         /// Text_contact control.
         /// </summary>
         /// <remarks>
@@ -65,15 +65,6 @@ namespace CMS.UserInterface.VirtualClassroom.StaffPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Text_contact;
-        
-        /// <summary>
-        /// Text_emer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_emer;
         
         /// <summary>
         /// Text_email control.
@@ -94,42 +85,6 @@ namespace CMS.UserInterface.VirtualClassroom.StaffPortal {
         protected global::System.Web.UI.WebControls.TextBox Text_pwd;
         
         /// <summary>
-        /// Text_cpwd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_cpwd;
-        
-        /// <summary>
-        /// Text_join_year control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_join_year;
-        
-        /// <summary>
-        /// DDL_role control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDL_role;
-        
-        /// <summary>
-        /// DDL_designation control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDL_designation;
-        
-        /// <summary>
         /// DDL_dept control.
         /// </summary>
         /// <remarks>
@@ -137,6 +92,24 @@ namespace CMS.UserInterface.VirtualClassroom.StaffPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DDL_dept;
+        
+        /// <summary>
+        /// Text_year control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Text_year;
+        
+        /// <summary>
+        /// DDL_semester control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_semester;
         
         /// <summary>
         /// DDL_gender control.
@@ -157,6 +130,33 @@ namespace CMS.UserInterface.VirtualClassroom.StaffPortal {
         protected global::System.Web.UI.WebControls.DropDownList DDL_category;
         
         /// <summary>
+        /// DDL_type control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_type;
+        
+        /// <summary>
+        /// Text_merit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Text_merit;
+        
+        /// <summary>
+        /// DDL_board control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_board;
+        
+        /// <summary>
         /// DDL_blood control.
         /// </summary>
         /// <remarks>
@@ -166,13 +166,76 @@ namespace CMS.UserInterface.VirtualClassroom.StaffPortal {
         protected global::System.Web.UI.WebControls.DropDownList DDL_blood;
         
         /// <summary>
-        /// Check_ITS control.
+        /// Text_emer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox Check_ITS;
+        protected global::System.Web.UI.WebControls.TextBox Text_emer;
+        
+        /// <summary>
+        /// DDL_div control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_div;
+        
+        /// <summary>
+        /// Text_batch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Text_batch;
+        
+        /// <summary>
+        /// Text_passport control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Text_passport;
+        
+        /// <summary>
+        /// Text_unique control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Text_unique;
+        
+        /// <summary>
+        /// Check_tfw control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox Check_tfw;
+        
+        /// <summary>
+        /// Check_def control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox Check_def;
+        
+        /// <summary>
+        /// Check_pd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox Check_pd;
         
         /// <summary>
         /// Submit control.
