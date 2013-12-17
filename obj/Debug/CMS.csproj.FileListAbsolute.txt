@@ -37,3 +37,6 @@ D:\New CMS\CMS\bin\CMS.dll
 D:\New CMS\CMS\bin\CMS.pdb
 D:\New CMS\CMS\obj\Debug\CMS.dll
 D:\New CMS\CMS\obj\Debug\CMS.pdb
+D:\rajatpatel92\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
+D:\rajatpatel92\CMS\obj\Debug\CMS.dll
+D:\rajatpatel92\CMS\obj\Debug\CMS.pdb
