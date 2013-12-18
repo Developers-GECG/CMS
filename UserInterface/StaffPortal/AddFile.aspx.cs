@@ -23,7 +23,7 @@ namespace CMS.UserInterface.StaffPortal
                 try
                 {
                     string filename = Path.GetFileName(FileUploadControl.FileName);
-                    FileUploadControl.SaveAs(Server.MapPath("~/") + filename);
+                    FileUploadControl.SaveAs(Server.MapPath("~/Temp/") + filename);
                     StatusLabel.Text = "Upload status: File uploaded!";
                 }
                 catch (Exception ex)
