@@ -18,11 +18,11 @@ namespace CMS
         }
         protected void Register_Click(object sender, EventArgs e)
         {
-            if (ddlRegisterAs.Text == "Staff")
+            if (ddlRegisterAs.SelectedItem.Text == "Staff")
             {
                 Response.Redirect("StaffPortal/StaffRegister.aspx");
             }
-            else if (ddlRegisterAs.Text == "Student")
+            else if (ddlRegisterAs.SelectedItem.Text == "Student")
             {
                 Response.Redirect("StudentPortal/StudentRegister.aspx");
             }
@@ -31,18 +31,17 @@ namespace CMS
         {
             loginTasks = new LoginTasks(connString);
             Boolean flag = true;
-            if (ddlLogInAs.Text == "Staff") flag = !flag;
-            // Boolean i = loginTasks.checkLogin(username.Text, pwd.Text, flag);
+            if (ddlLogInAs.Text == "Student") flag = !flag;
             if (loginTasks.checkLogin(username.Text, pwd.Text, flag))
             {
                 switch (flag)
                 {
-                    case false:
+                    case true:
                         Session["UserName"] = loginTasks.returnName();
                         Session["UserID"] = username.Text;
                         Response.Redirect("StaffPortal/Staff-home.aspx");
                         break;
-                    case true:
+                    case false:
                         Session["UserName"] = loginTasks.returnName();
                         Session["UserID"] = username.Text;
                         Response.Redirect("StudentPortal/Student-home.aspx");
@@ -53,25 +52,6 @@ namespace CMS
             {
                 ClientScript.RegisterStartupScript(Page.GetType(), "validation", "<script language='javascript'>alert('Invalid UserName or Password')</script>");
             }
-            //String uname = username.Text;
-            //String password = pwd.Text;
-            //String type = ddlLogInAs.Text;
-            //if (loginTasks.Login(username.Text, pwd.Text, ddlLogInAs.Text))
-            //{
-            //    switch (ddlLogInAs.Text)
-            //    {
-            //        case "Staff":
-            //            Response.Redirect("StaffPortal/Staff-home.aspx");
-            //            break;
-            //        case "Student":
-            //            Response.Redirect("StudentPortal/Student-home.aspx");
-            //            break;
-            //    }
-            //}
-            //else
-            //{
-            //    ClientScript.RegisterStartupScript(Page.GetType(), "validation", "<script language='javascript'>alert('Invalid Username and Password')</script>");
-            //}
         }
     }
 }

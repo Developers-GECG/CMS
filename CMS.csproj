@@ -108,6 +108,13 @@
     <Compile Include="UserInterface\StaffPortal\demo.aspx.designer.cs">
       <DependentUpon>demo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\StaffPortal\EditStaffProfile.aspx.cs">
+      <DependentUpon>EditStaffProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\EditStaffProfile.aspx.designer.cs">
+      <DependentUpon>EditStaffProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\StaffPortal\simple.aspx.cs">
       <DependentUpon>simple.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -415,6 +422,7 @@
     <Content Include="UserInterface\StaffPortal\AddFile.aspx" />
     <Content Include="UserInterface\StaffPortal\AddVideo.aspx" />
     <Content Include="UserInterface\StaffPortal\demo.aspx" />
+    <Content Include="UserInterface\StaffPortal\EditStaffProfile.aspx" />
     <Content Include="UserInterface\StaffPortal\simple.aspx" />
     <Content Include="UserInterface\StaffPortal\Staff-home.aspx" />
     <Content Include="UserInterface\StaffPortal\StaffRegister.aspx" />
