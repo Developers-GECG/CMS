@@ -3,12 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="title" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="pageTitle" runat="server">
     Add Files
 </asp:Content>
 
+
 <asp:Content ID="Content3" ContentPlaceHolderID="form" runat="server">
-    <form id="Form1" class="form-horizontal" runat="server">
+    <form id="Form" class="form-horizontal" runat="server">
         <fieldset>
             <div class="control-group">
                 <label class="control-label">
@@ -38,9 +39,12 @@
                 </div>
                 <div class="form-actions">
                   <asp:FileUpload id="FileUploadControl" runat="server" />
-                     <asp:Button id="UploadButton" text="Upload" onclick="Button_Click"  class="btn btn-inverse" runat="server" /> 
+                    <asp:Button ID="UploadButton" runat="server" Text="Upload" OnClick="Upload_Click"  class="btn btn-inverse" />
                         <button class="btn">
                         Cancel</button>
+                    <br/><br/>
+                    <asp:Label runat="server" id="StatusLabel" />
+
                 </div>
             </div>
         </fieldset>
