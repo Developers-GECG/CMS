@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="title" runat="server">
- Add Videos
+<asp:Content ID="Content2" ContentPlaceHolderID="pageTitle" runat="server">
+ Add Class
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="form" runat="server">

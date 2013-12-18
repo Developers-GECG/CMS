@@ -40,3 +40,8 @@ D:\New CMS\CMS\obj\Debug\CMS.pdb
 D:\rajatpatel92\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
 D:\rajatpatel92\CMS\obj\Debug\CMS.dll
 D:\rajatpatel92\CMS\obj\Debug\CMS.pdb
+E:\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
+E:\CMS\obj\Debug\CMS.dll
+E:\CMS\obj\Debug\CMS.pdb
+E:\CMS\bin\CMS.dll
+E:\CMS\bin\CMS.pdb

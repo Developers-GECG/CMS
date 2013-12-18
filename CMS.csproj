@@ -65,289 +65,117 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\CMS.dll" />
-    <Content Include="bin\CMS.pdb" />
-    <Content Include="bin\MySql.Data.dll" />
-    <Content Include="charisma-master\blank.html" />
-    <Content Include="charisma-master\calendar.html" />
-    <Content Include="charisma-master\chart.html" />
-    <Content Include="charisma-master\css\bootstrap-cerulean.css" />
-    <Content Include="charisma-master\css\bootstrap-classic.css" />
-    <Content Include="charisma-master\css\bootstrap-classic.min.css" />
-    <Content Include="charisma-master\css\bootstrap-cyborg.css" />
-    <Content Include="charisma-master\css\bootstrap-journal.css" />
-    <Content Include="charisma-master\css\bootstrap-redy.css" />
-    <Content Include="charisma-master\css\bootstrap-responsive.css" />
-    <Content Include="charisma-master\css\bootstrap-responsive.min.css" />
-    <Content Include="charisma-master\css\bootstrap-simplex.css" />
-    <Content Include="charisma-master\css\bootstrap-slate.css" />
-    <Content Include="charisma-master\css\bootstrap-spacelab.css" />
-    <Content Include="charisma-master\css\bootstrap-united.css" />
-    <Content Include="charisma-master\css\charisma-app.css" />
-    <Content Include="charisma-master\css\chosen.css" />
-    <Content Include="charisma-master\css\colorbox.css" />
-    <Content Include="charisma-master\css\elfinder.min.css" />
-    <Content Include="charisma-master\css\elfinder.theme.css" />
-    <Content Include="charisma-master\css\fullcalendar.css" />
-    <Content Include="charisma-master\css\fullcalendar.print.css" />
-    <Content Include="charisma-master\css\jquery-ui-1.8.21.custom.css" />
-    <Content Include="charisma-master\css\jquery.cleditor.css" />
-    <Content Include="charisma-master\css\jquery.iphone.toggle.css" />
-    <Content Include="charisma-master\css\jquery.noty.css" />
-    <Content Include="charisma-master\css\noty_theme_default.css" />
-    <Content Include="charisma-master\css\opa-icons.css" />
-    <Content Include="charisma-master\css\uniform.default.css" />
-    <Content Include="charisma-master\css\uploadify.css" />
-    <Content Include="charisma-master\doc\assets\images\html_structure.png" />
-    <Content Include="charisma-master\doc\assets\images\image_1.png" />
-    <Content Include="charisma-master\doc\css\documenter_style.css" />
-    <Content Include="charisma-master\doc\css\img\info.png" />
-    <Content Include="charisma-master\doc\css\img\pre_bg.png" />
-    <Content Include="charisma-master\doc\css\img\warning.png" />
-    <Content Include="charisma-master\doc\favicon.ico" />
-    <Content Include="charisma-master\doc\index.html" />
-    <Content Include="charisma-master\doc\js\jquery.1.6.4.js" />
-    <Content Include="charisma-master\doc\js\jquery.easing.js" />
-    <Content Include="charisma-master\doc\js\jquery.scrollTo-1.4.2-min.js" />
-    <Content Include="charisma-master\doc\js\script.js" />
-    <Content Include="charisma-master\error.html" />
-    <Content Include="charisma-master\file-manager.html" />
-    <Content Include="charisma-master\form.html" />
-    <Content Include="charisma-master\gallery.html" />
-    <Content Include="charisma-master\grid.html" />
-    <Content Include="charisma-master\icon.html" />
-    <Content Include="charisma-master\img\ajax-loaders\ajax-loader-1.gif" />
-    <Content Include="charisma-master\img\ajax-loaders\ajax-loader-2.gif" />
-    <Content Include="charisma-master\img\ajax-loaders\ajax-loader-3.gif" />
-    <Content Include="charisma-master\img\ajax-loaders\ajax-loader-4.gif" />
-    <Content Include="charisma-master\img\ajax-loaders\ajax-loader-5.gif" />
-    <Content Include="charisma-master\img\ajax-loaders\ajax-loader-6.gif" />
-    <Content Include="charisma-master\img\ajax-loaders\ajax-loader-7.gif" />
-    <Content Include="charisma-master\img\ajax-loaders\ajax-loader-8.gif" />
-    <Content Include="charisma-master\img\arrows-active.png" />
-    <Content Include="charisma-master\img\arrows-normal.png" />
-    <Content Include="charisma-master\img\bg-input-focus.png" />
-    <Content Include="charisma-master\img\bg-input.png" />
-    <Content Include="charisma-master\img\border.png" />
-    <Content Include="charisma-master\img\buttons.gif" />
-    <Content Include="charisma-master\img\cancel-off.png" />
-    <Content Include="charisma-master\img\cancel-on.png" />
-    <Content Include="charisma-master\img\chosen-sprite.png" />
-    <Content Include="charisma-master\img\controls.png" />
-    <Content Include="charisma-master\img\crop.gif" />
-    <Content Include="charisma-master\img\dialogs.png" />
-    <Content Include="charisma-master\img\error_bg.png" />
-    <Content Include="charisma-master\img\favicon.ico" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_Mi5qcGc1344290242.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MjAuanBn1344290232.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MjEuanBn1344290232.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MjIuanBn1344290236.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MjMuanBn1344290238.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MjQuanBn1344290240.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MS5qcGc1344290228.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTAuanBn1344290212.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTcuanBn1344290224.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTEuanBn1344290212.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTguanBn1344290226.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTIuanBn1344290216.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTkuanBn1344290228.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTMuanBn1344290218.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTQuanBn1344290218.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTUuanBn1344290220.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_MTYuanBn1344290222.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_My5qcGc1344290244.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_NC5qcGc1344290246.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_Ni5qcGc1344290248.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_NS5qcGc1344290246.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_Ny5qcGc1344290252.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_OC5qcGc1344290254.png" />
-    <Content Include="charisma-master\img\gallery\.tmb\l1_OS5qcGc1344290254.png" />
-    <Content Include="charisma-master\img\gallery\1.jpg" />
-    <Content Include="charisma-master\img\gallery\10.jpg" />
-    <Content Include="charisma-master\img\gallery\11.jpg" />
-    <Content Include="charisma-master\img\gallery\12.jpg" />
-    <Content Include="charisma-master\img\gallery\13.jpg" />
-    <Content Include="charisma-master\img\gallery\14.jpg" />
-    <Content Include="charisma-master\img\gallery\15.jpg" />
-    <Content Include="charisma-master\img\gallery\16.jpg" />
-    <Content Include="charisma-master\img\gallery\17.jpg" />
-    <Content Include="charisma-master\img\gallery\18.jpg" />
-    <Content Include="charisma-master\img\gallery\19.jpg" />
-    <Content Include="charisma-master\img\gallery\2.jpg" />
-    <Content Include="charisma-master\img\gallery\20.jpg" />
-    <Content Include="charisma-master\img\gallery\21.jpg" />
-    <Content Include="charisma-master\img\gallery\22.jpg" />
-    <Content Include="charisma-master\img\gallery\23.jpg" />
-    <Content Include="charisma-master\img\gallery\24.jpg" />
-    <Content Include="charisma-master\img\gallery\3.jpg" />
-    <Content Include="charisma-master\img\gallery\4.jpg" />
-    <Content Include="charisma-master\img\gallery\5.jpg" />
-    <Content Include="charisma-master\img\gallery\6.jpg" />
-    <Content Include="charisma-master\img\gallery\7.jpg" />
-    <Content Include="charisma-master\img\gallery\8.jpg" />
-    <Content Include="charisma-master\img\gallery\9.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\1.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\10.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\11.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\12.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\13.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\14.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\15.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\16.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\17.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\18.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\19.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\2.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\20.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\21.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\22.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\23.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\24.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\3.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\4.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\5.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\6.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\7.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\8.jpg" />
-    <Content Include="charisma-master\img\gallery\thumbs\9.jpg" />
-    <Content Include="charisma-master\img\glyphicons-halflings-white.png" />
-    <Content Include="charisma-master\img\glyphicons-halflings.png" />
-    <Content Include="charisma-master\img\icons-big.png" />
-    <Content Include="charisma-master\img\icons-small.png" />
-    <Content Include="charisma-master\img\iphone-style-checkboxes\off.png" />
-    <Content Include="charisma-master\img\iphone-style-checkboxes\on.png" />
-    <Content Include="charisma-master\img\iphone-style-checkboxes\slider.png" />
-    <Content Include="charisma-master\img\iphone-style-checkboxes\slider_center.png" />
-    <Content Include="charisma-master\img\iphone-style-checkboxes\slider_left.png" />
-    <Content Include="charisma-master\img\iphone-style-checkboxes\slider_right.png" />
-    <Content Include="charisma-master\img\loading.gif" />
-    <Content Include="charisma-master\img\loading_background.png" />
-    <Content Include="charisma-master\img\logo.png" />
-    <Content Include="charisma-master\img\logo20.png" />
-    <Content Include="charisma-master\img\opa-icons-black16.png" />
-    <Content Include="charisma-master\img\opa-icons-black32.png" />
-    <Content Include="charisma-master\img\opa-icons-blue16.png" />
-    <Content Include="charisma-master\img\opa-icons-blue32.png" />
-    <Content Include="charisma-master\img\opa-icons-color16.png" />
-    <Content Include="charisma-master\img\opa-icons-color32.png" />
-    <Content Include="charisma-master\img\opa-icons-darkgray16.png" />
-    <Content Include="charisma-master\img\opa-icons-darkgray32.png" />
-    <Content Include="charisma-master\img\opa-icons-gray16.png" />
-    <Content Include="charisma-master\img\opa-icons-gray32.png" />
-    <Content Include="charisma-master\img\opa-icons-green16.png" />
-    <Content Include="charisma-master\img\opa-icons-green32.png" />
-    <Content Include="charisma-master\img\opa-icons-orange16.png" />
-    <Content Include="charisma-master\img\opa-icons-orange32.png" />
-    <Content Include="charisma-master\img\opa-icons-red16.png" />
-    <Content Include="charisma-master\img\opa-icons-red32.png" />
-    <Content Include="charisma-master\img\opa-icons-white16.png" />
-    <Content Include="charisma-master\img\opa-icons-white32.png" />
-    <Content Include="charisma-master\img\progress.gif" />
-    <Content Include="charisma-master\img\qrcode.png" />
-    <Content Include="charisma-master\img\qrcode136.png" />
-    <Content Include="charisma-master\img\quicklook-bg.png" />
-    <Content Include="charisma-master\img\quicklook-icons.png" />
-    <Content Include="charisma-master\img\resize.png" />
-    <Content Include="charisma-master\img\spinner-mini.gif" />
-    <Content Include="charisma-master\img\sprite.png" />
-    <Content Include="charisma-master\img\star-half.png" />
-    <Content Include="charisma-master\img\star-off.png" />
-    <Content Include="charisma-master\img\star-on.png" />
-    <Content Include="charisma-master\img\thumb.png" />
-    <Content Include="charisma-master\img\toolbar.gif" />
-    <Content Include="charisma-master\img\toolbar.png" />
-    <Content Include="charisma-master\img\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="charisma-master\img\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="charisma-master\img\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="charisma-master\img\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="charisma-master\img\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="charisma-master\img\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="charisma-master\img\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="charisma-master\img\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="charisma-master\img\ui-icons_222222_256x240.png" />
-    <Content Include="charisma-master\img\ui-icons_2e83ff_256x240.png" />
-    <Content Include="charisma-master\img\ui-icons_454545_256x240.png" />
-    <Content Include="charisma-master\img\ui-icons_888888_256x240.png" />
-    <Content Include="charisma-master\img\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="charisma-master\img\uploadify-cancel.png" />
-    <Content Include="charisma-master\index.html" />
-    <Content Include="charisma-master\js\bootstrap-alert.js" />
-    <Content Include="charisma-master\js\bootstrap-button.js" />
-    <Content Include="charisma-master\js\bootstrap-carousel.js" />
-    <Content Include="charisma-master\js\bootstrap-collapse.js" />
-    <Content Include="charisma-master\js\bootstrap-dropdown.js" />
-    <Content Include="charisma-master\js\bootstrap-modal.js" />
-    <Content Include="charisma-master\js\bootstrap-popover.js" />
-    <Content Include="charisma-master\js\bootstrap-scrollspy.js" />
-    <Content Include="charisma-master\js\bootstrap-tab.js" />
-    <Content Include="charisma-master\js\bootstrap-toggle.js" />
-    <Content Include="charisma-master\js\bootstrap-tooltip.js" />
-    <Content Include="charisma-master\js\bootstrap-tour.js" />
-    <Content Include="charisma-master\js\bootstrap-transition.js" />
-    <Content Include="charisma-master\js\bootstrap-typeahead.js" />
-    <Content Include="charisma-master\js\charisma.js" />
-    <Content Include="charisma-master\js\excanvas.js" />
-    <Content Include="charisma-master\js\fullcalendar.min.js" />
-    <Content Include="charisma-master\js\jquery-1.7.2.min.js" />
-    <Content Include="charisma-master\js\jquery-ui-1.8.21.custom.min.js" />
-    <Content Include="charisma-master\js\jquery.autogrow-textarea.js" />
-    <Content Include="charisma-master\js\jquery.chosen.min.js" />
-    <Content Include="charisma-master\js\jquery.cleditor.min.js" />
-    <Content Include="charisma-master\js\jquery.colorbox.min.js" />
-    <Content Include="charisma-master\js\jquery.cookie.js" />
-    <Content Include="charisma-master\js\jquery.dataTables.min.js" />
-    <Content Include="charisma-master\js\jquery.elfinder.min.js" />
-    <Content Include="charisma-master\js\jquery.flot.min.js" />
-    <Content Include="charisma-master\js\jquery.flot.pie.min.js" />
-    <Content Include="charisma-master\js\jquery.flot.resize.min.js" />
-    <Content Include="charisma-master\js\jquery.flot.stack.js" />
-    <Content Include="charisma-master\js\jquery.history.js" />
-    <Content Include="charisma-master\js\jquery.iphone.toggle.js" />
-    <Content Include="charisma-master\js\jquery.js" />
-    <Content Include="charisma-master\js\jquery.noty.js" />
-    <Content Include="charisma-master\js\jquery.raty.min.js" />
-    <Content Include="charisma-master\js\jquery.uniform.min.js" />
-    <Content Include="charisma-master\js\jquery.uploadify-3.1.min.js" />
-    <Content Include="charisma-master\license.txt" />
-    <Content Include="charisma-master\login.html" />
-    <Content Include="charisma-master\misc\check-exists.php" />
-    <Content Include="charisma-master\misc\elfinder-connector\connector.php" />
-    <Content Include="charisma-master\misc\elfinder-connector\elFinder.class.php" />
-    <Content Include="charisma-master\misc\elfinder-connector\elFinderConnector.class.php" />
-    <Content Include="charisma-master\misc\elfinder-connector\elFinderVolumeDriver.class.php" />
-    <Content Include="charisma-master\misc\elfinder-connector\elFinderVolumeLocalFileSystem.class.php" />
-    <Content Include="charisma-master\misc\elfinder-connector\elFinderVolumeMySQL.class.php" />
-    <Content Include="charisma-master\misc\elfinder-connector\MySQLStorage.sql" />
-    <Content Include="charisma-master\misc\uploadify.php" />
-    <Content Include="charisma-master\misc\uploadify.swf" />
-    <Content Include="charisma-master\php-version\blank.php" />
-    <Content Include="charisma-master\php-version\calendar.php" />
-    <Content Include="charisma-master\php-version\chart.php" />
-    <Content Include="charisma-master\php-version\error.php" />
-    <Content Include="charisma-master\php-version\file-manager.php" />
-    <Content Include="charisma-master\php-version\footer.php" />
-    <Content Include="charisma-master\php-version\form.php" />
-    <Content Include="charisma-master\php-version\gallery.php" />
-    <Content Include="charisma-master\php-version\grid.php" />
-    <Content Include="charisma-master\php-version\header.php" />
-    <Content Include="charisma-master\php-version\icon.php" />
-    <Content Include="charisma-master\php-version\index.php" />
-    <Content Include="charisma-master\php-version\login.php" />
-    <Content Include="charisma-master\php-version\table.php" />
-    <Content Include="charisma-master\php-version\tour.php" />
-    <Content Include="charisma-master\php-version\typography.php" />
-    <Content Include="charisma-master\php-version\ui.php" />
-    <Content Include="charisma-master\table.html" />
-    <Content Include="charisma-master\tour.html" />
-    <Content Include="charisma-master\typography.html" />
-    <Content Include="charisma-master\ui.html" />
-    <Content Include="UserInterface\Login.aspx" />
-    <Content Include="UserInterface\StaffPortal\AddFile.aspx" />
-    <Content Include="UserInterface\StaffPortal\AddVideo.aspx" />
-    <Content Include="UserInterface\StaffPortal\demo.aspx" />
-    <Content Include="UserInterface\StaffPortal\Staff-home.aspx" />
-    <Content Include="UserInterface\StaffPortal\StaffRegister.aspx" />
-    <Content Include="UserInterface\StudentPortal\Student-home.aspx" />
+    <Compile Include="Logic\Common\DBConnect.cs" />
+    <Compile Include="Logic\Common\LoginTasks.cs" />
+    <Compile Include="Logic\Database\DBConnect.cs" />
+    <Compile Include="Logic\Functions.cs" />
+    <Compile Include="Logic\Login\LoginTasks.cs" />
+    <Compile Include="Logic\StudentPortal\StudentPortal.cs" />
+    <Compile Include="Logic\VirtualClassroom\Video.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInterface\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddClass.aspx.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddClass.aspx.designer.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddFile.aspx.cs">
+      <DependentUpon>AddFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddFile.aspx.designer.cs">
+      <DependentUpon>AddFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddVideo.aspx.cs">
+      <DependentUpon>AddVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddVideo.aspx.designer.cs">
+      <DependentUpon>AddVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\demo.aspx.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\demo.aspx.designer.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\simple.aspx.cs">
+      <DependentUpon>simple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\simple.aspx.designer.cs">
+      <DependentUpon>simple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\Staff-home.aspx.cs">
+      <DependentUpon>Staff-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\Staff-home.aspx.designer.cs">
+      <DependentUpon>Staff-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\Staff.Master.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\Staff.Master.designer.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\StaffRegister.aspx.cs">
+      <DependentUpon>StaffRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\StaffRegister.aspx.designer.cs">
+      <DependentUpon>StaffRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\VirtualClass.aspx.cs">
+      <DependentUpon>VirtualClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\VirtualClass.aspx.designer.cs">
+      <DependentUpon>VirtualClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\Student-home.aspx.cs">
+      <DependentUpon>Student-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\Student-home.aspx.designer.cs">
+      <DependentUpon>Student-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\StudentRegister.aspx.cs">
+      <DependentUpon>StudentRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\StudentRegister.aspx.designer.cs">
+      <DependentUpon>StudentRegister.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\build.force" />
+    <Content Include="obj\Debug\CMS.csprojResolveAssemblyReference %28Rajat Patel%27s conflicted copy 2013-12-15%29.cache" />
+    <Content Include="obj\Debug\CMS.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput %28Rajat Patel%27s conflicted copy 2013-12-15%29.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Temp\Print.pdf" />
     <Content Include="UserInterface\Common\css\bootstrap-cerulean.css" />
     <Content Include="UserInterface\Common\css\bootstrap-classic.css" />
     <Content Include="UserInterface\Common\css\bootstrap-classic.min.css" />
@@ -556,6 +384,7 @@
     <Content Include="UserInterface\Common\js\bootstrap-transition.js" />
     <Content Include="UserInterface\Common\js\bootstrap-typeahead.js" />
     <Content Include="UserInterface\Common\js\charisma.js" />
+    <Content Include="UserInterface\Common\js\CMS.js" />
     <Content Include="UserInterface\Common\js\excanvas.js" />
     <Content Include="UserInterface\Common\js\fullcalendar.min.js" />
     <Content Include="UserInterface\Common\js\jquery-1.7.2.min.js" />
@@ -565,6 +394,7 @@
     <Content Include="UserInterface\Common\js\jquery.cleditor.min.js" />
     <Content Include="UserInterface\Common\js\jquery.colorbox.min.js" />
     <Content Include="UserInterface\Common\js\jquery.cookie.js" />
+    <Content Include="UserInterface\Common\js\jquery.cookie.old.js" />
     <Content Include="UserInterface\Common\js\jquery.dataTables.min.js" />
     <Content Include="UserInterface\Common\js\jquery.elfinder.min.js" />
     <Content Include="UserInterface\Common\js\jquery.flot.min.js" />
@@ -578,6 +408,31 @@
     <Content Include="UserInterface\Common\js\jquery.raty.min.js" />
     <Content Include="UserInterface\Common\js\jquery.uniform.min.js" />
     <Content Include="UserInterface\Common\js\jquery.uploadify-3.1.min.js" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\MySQLStorage.sql" />
+    <Content Include="UserInterface\Common\misc\uploadify.swf" />
+    <Content Include="UserInterface\Login.aspx" />
+    <Content Include="UserInterface\StaffPortal\AddClass.aspx" />
+    <Content Include="UserInterface\StaffPortal\AddFile.aspx" />
+    <Content Include="UserInterface\StaffPortal\AddVideo.aspx" />
+    <Content Include="UserInterface\StaffPortal\demo.aspx" />
+    <Content Include="UserInterface\StaffPortal\simple.aspx" />
+    <Content Include="UserInterface\StaffPortal\Staff-home.aspx" />
+    <Content Include="UserInterface\StaffPortal\StaffRegister.aspx" />
+    <Content Include="UserInterface\StaffPortal\thumbnail.jpg" />
+    <Content Include="UserInterface\StaffPortal\VirtualClass.aspx" />
+    <Content Include="UserInterface\StudentPortal\Student-home.aspx" />
+    <Content Include="UserInterface\StudentPortal\StudentRegister.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\CMS-09-10-13.sql" />
+    <Content Include="DB\CMS-15-12-13.sql" />
+    <Content Include="DB\CMS-26-10-13.sql" />
+    <Content Include="obj\Debug\CMS.csproj.FileListAbsolute %28Rajat Patel%27s conflicted copy 2013-12-15%29.txt" />
+    <Content Include="obj\Debug\CMS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CMS.dll" />
+    <Content Include="obj\Debug\CMS.pdb" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="UserInterface\Common\misc\check-exists.php" />
     <Content Include="UserInterface\Common\misc\elfinder-connector\connector.php" />
     <Content Include="UserInterface\Common\misc\elfinder-connector\elFinder.class.php" />
@@ -585,9 +440,8 @@
     <Content Include="UserInterface\Common\misc\elfinder-connector\elFinderVolumeDriver.class.php" />
     <Content Include="UserInterface\Common\misc\elfinder-connector\elFinderVolumeLocalFileSystem.class.php" />
     <Content Include="UserInterface\Common\misc\elfinder-connector\elFinderVolumeMySQL.class.php" />
-    <Content Include="UserInterface\Common\misc\elfinder-connector\MySQLStorage.sql" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\mime.types" />
     <Content Include="UserInterface\Common\misc\uploadify.php" />
-    <Content Include="UserInterface\Common\misc\uploadify.swf" />
     <Content Include="UserInterface\Common\php-version\blank.php" />
     <Content Include="UserInterface\Common\php-version\calendar.php" />
     <Content Include="UserInterface\Common\php-version\chart.php" />
@@ -605,97 +459,17 @@
     <Content Include="UserInterface\Common\php-version\tour.php" />
     <Content Include="UserInterface\Common\php-version\typography.php" />
     <Content Include="UserInterface\Common\php-version\ui.php" />
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Logic\Login\LoginTasks.cs" />
-    <Compile Include="Logic\Database\DBConnect.cs" />
-    <Compile Include="Logic\StudentPortal\StudentPortal.cs" />
-    <Compile Include="Logic\VirtualClassroom\Video.cs" />
-    <Compile Include="UserInterface\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserInterface\StaffPortal\AddFile.aspx.cs">
-      <DependentUpon>AddFile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\AddFile.aspx.designer.cs">
-      <DependentUpon>AddFile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\AddVideo.aspx.cs">
-      <DependentUpon>AddVideo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\AddVideo.aspx.designer.cs">
-      <DependentUpon>AddVideo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\demo.aspx.cs">
-      <DependentUpon>demo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\demo.aspx.designer.cs">
-      <DependentUpon>demo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\Staff-home.aspx.cs">
-      <DependentUpon>Staff-home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\Staff-home.aspx.designer.cs">
-      <DependentUpon>Staff-home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\Staff.Master.cs">
-      <DependentUpon>Staff.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\Staff.Master.designer.cs">
-      <DependentUpon>Staff.Master</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\StaffRegister.aspx.cs">
-      <DependentUpon>StaffRegister.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\StaffRegister.aspx.designer.cs">
-      <DependentUpon>StaffRegister.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StudentPortal\Student-home.aspx.cs">
-      <DependentUpon>Student-home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StudentPortal\Student-home.aspx.designer.cs">
-      <DependentUpon>Student-home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StudentPortal\Student.Master.cs">
-      <DependentUpon>Student.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StudentPortal\Student.Master.designer.cs">
-      <DependentUpon>Student.Master</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="UserInterface\StudentPortal\Student.Master" />
     <Content Include="UserInterface\StaffPortal\Staff.Master" />
+    <Content Include="UserInterface\StudentPortal\Student.Master" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="charisma-master\.htaccess" />
-    <None Include="charisma-master\misc\elfinder-connector\mime.types" />
-    <None Include="charisma-master\README.md" />
-    <None Include="UserInterface\Common\misc\elfinder-connector\mime.types" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Logic\StaffPortal\" />
-    <Folder Include="UserInterface\VirtualClassroom\" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
