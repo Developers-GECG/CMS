@@ -10,7 +10,7 @@
 namespace CMS.UserInterface.StaffPortal {
     
     
-    public partial class AddVideo {
+    public partial class EditStaffProfile {
         
         /// <summary>
         /// Form1 control.
@@ -22,129 +22,174 @@ namespace CMS.UserInterface.StaffPortal {
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
         
         /// <summary>
-        /// ddlClass control.
+        /// Text_fullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlClass;
+        protected global::System.Web.UI.WebControls.TextBox Text_fullName;
         
         /// <summary>
-        /// Text_classTitle control.
+        /// Text_bday control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_classTitle;
+        protected global::System.Web.UI.WebControls.TextBox Text_bday;
         
         /// <summary>
-        /// Text_classDescription control.
+        /// Text_Address control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_classDescription;
+        protected global::System.Web.UI.WebControls.TextBox Text_Address;
         
         /// <summary>
-        /// Text_courtesy control.
+        /// Text_contact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_courtesy;
+        protected global::System.Web.UI.WebControls.TextBox Text_contact;
         
         /// <summary>
-        /// DDL_AssocSemester control.
+        /// Text_emer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDL_AssocSemester;
+        protected global::System.Web.UI.WebControls.TextBox Text_emer;
         
         /// <summary>
-        /// ScriptManager1 control.
+        /// DDL_gender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_gender;
         
         /// <summary>
-        /// UpdatePanel1 control.
+        /// DDL_category control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_category;
         
         /// <summary>
-        /// CheckBox_dept control.
+        /// DDL_blood control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBox_dept;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_blood;
         
         /// <summary>
-        /// Text_CKey control.
+        /// personal_changes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_CKey;
+        protected global::System.Web.UI.WebControls.Button personal_changes;
         
         /// <summary>
-        /// add_Class control.
+        /// Text_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button add_Class;
+        protected global::System.Web.UI.WebControls.TextBox Text_email;
         
         /// <summary>
-        /// Text_key control.
+        /// Text_pwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_key;
+        protected global::System.Web.UI.WebControls.TextBox Text_pwd;
         
         /// <summary>
-        /// Text_title control.
+        /// Text_cpwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_title;
+        protected global::System.Web.UI.WebControls.TextBox Text_cpwd;
         
         /// <summary>
-        /// Text_description control.
+        /// credential_changes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text_description;
+        protected global::System.Web.UI.WebControls.Button credential_changes;
         
         /// <summary>
-        /// add_Video control.
+        /// Text_join_year control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button add_Video;
+        protected global::System.Web.UI.WebControls.TextBox Text_join_year;
+        
+        /// <summary>
+        /// DDL_role control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_role;
+        
+        /// <summary>
+        /// DDL_designation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_designation;
+        
+        /// <summary>
+        /// DDL_dept control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_dept;
+        
+        /// <summary>
+        /// Check_ITS control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox Check_ITS;
+        
+        /// <summary>
+        /// academic_changes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button academic_changes;
     }
 }

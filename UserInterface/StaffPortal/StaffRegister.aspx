@@ -4,16 +4,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <!--
-		Charisma v1.0.0
-
-		Copyright 2012 Muhammad Usman
-		Licensed under the Apache License v2.0
-		http://www.apache.org/licenses/LICENSE-2.0
-
-		http://usman.it
-		http://twitter.com/halalit_usman
-	-->
     <title>Staff Member Registration Form - CMS, GECG28</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template." />
@@ -45,11 +35,6 @@
     <link href='../Common/css/jquery.iphone.toggle.css' rel='stylesheet' />
     <link href='../Common/css/opa-icons.css' rel='stylesheet' />
     <link href='../Common/css/uploadify.css' rel='stylesheet' />
-    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-    <!-- The fav icon -->
     <link rel="shortcut icon" href="../Common/img/favicon.ico" />
 </head>
 <body>

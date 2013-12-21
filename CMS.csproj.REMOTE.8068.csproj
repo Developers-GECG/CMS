@@ -68,10 +68,121 @@
     <Compile Include="Logic\Common\DBConnect.cs" />
     <Compile Include="Logic\Common\LoginTasks.cs" />
     <Compile Include="Logic\Database\DBConnect.cs" />
-    <Content Include="UserInterface\Config.aspx" />
-    <Content Include="UserInterface\StaffPortal\AddClass.aspx" />
-    <Content Include="UserInterface\StaffPortal\simple.aspx" />
-    <Content Include="UserInterface\StaffPortal\VirtualClass.aspx" />
+    <Compile Include="Logic\Functions.cs" />
+    <Compile Include="Logic\Login\LoginTasks.cs" />
+    <Compile Include="Logic\StudentPortal\StudentPortal.cs" />
+    <Compile Include="Logic\VirtualClassroom\Video.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInterface\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddClass.aspx.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddClass.aspx.designer.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddFile.aspx.cs">
+      <DependentUpon>AddFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddFile.aspx.designer.cs">
+      <DependentUpon>AddFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddVideo.aspx.cs">
+      <DependentUpon>AddVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\AddVideo.aspx.designer.cs">
+      <DependentUpon>AddVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\demo.aspx.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\demo.aspx.designer.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\EditStaffProfile.aspx.cs">
+      <DependentUpon>EditStaffProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\EditStaffProfile.aspx.designer.cs">
+      <DependentUpon>EditStaffProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\simple.aspx.cs">
+      <DependentUpon>simple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\simple.aspx.designer.cs">
+      <DependentUpon>simple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\Staff-home.aspx.cs">
+      <DependentUpon>Staff-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\Staff-home.aspx.designer.cs">
+      <DependentUpon>Staff-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\Staff.Master.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\Staff.Master.designer.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\StaffRegister.aspx.cs">
+      <DependentUpon>StaffRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\StaffRegister.aspx.designer.cs">
+      <DependentUpon>StaffRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\VirtualClass.aspx.cs">
+      <DependentUpon>VirtualClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StaffPortal\VirtualClass.aspx.designer.cs">
+      <DependentUpon>VirtualClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\Student-home.aspx.cs">
+      <DependentUpon>Student-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\Student-home.aspx.designer.cs">
+      <DependentUpon>Student-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\StudentRegister.aspx.cs">
+      <DependentUpon>StudentRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\StudentRegister.aspx.designer.cs">
+      <DependentUpon>StudentRegister.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\build.force" />
+    <Content Include="obj\Debug\CMS.csprojResolveAssemblyReference %28Rajat Patel%27s conflicted copy 2013-12-15%29.cache" />
+    <Content Include="obj\Debug\CMS.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput %28Rajat Patel%27s conflicted copy 2013-12-15%29.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Temp\Print.pdf" />
     <Content Include="UserInterface\Common\css\bootstrap-cerulean.css" />
     <Content Include="UserInterface\Common\css\bootstrap-classic.css" />
     <Content Include="UserInterface\Common\css\bootstrap-classic.min.css" />
@@ -304,9 +415,9 @@
     <Content Include="UserInterface\Common\js\jquery.raty.min.js" />
     <Content Include="UserInterface\Common\js\jquery.uniform.min.js" />
     <Content Include="UserInterface\Common\js\jquery.uploadify-3.1.min.js" />
-    <Content Include="UserInterface\StudentPortal\VirtualClass.aspx" />
-    <Content Include="UserInterface\VirtualClassroom\index.aspx" />
-    <Content Include="UserInterface\VirtualClassroom\VirtualClass.aspx" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\MySQLStorage.sql" />
+    <Content Include="UserInterface\Common\misc\uploadify.swf" />
+    <Content Include="UserInterface\Login.aspx" />
     <Content Include="UserInterface\StaffPortal\AddClass.aspx" />
     <Content Include="UserInterface\StaffPortal\AddFile.aspx" />
     <Content Include="UserInterface\StaffPortal\AddVideo.aspx" />
@@ -330,83 +441,42 @@
     <Content Include="obj\Debug\CMS.pdb" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logic\Database\DBConfig.cs" />
-    <Compile Include="Logic\Functions.cs" />
-    <Compile Include="Logic\VirtualClassroom\VirtualClass.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\Config.aspx.cs">
-      <DependentUpon>Config.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\Config.aspx.designer.cs">
-      <DependentUpon>Config.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\AddClass.aspx.cs">
-      <DependentUpon>AddClass.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\AddClass.aspx.designer.cs">
-      <DependentUpon>AddClass.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\simple.aspx.cs">
-      <DependentUpon>simple.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\simple.aspx.designer.cs">
-      <DependentUpon>simple.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\VirtualClass.aspx.cs">
-      <DependentUpon>VirtualClass.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StaffPortal\VirtualClass.aspx.designer.cs">
-      <DependentUpon>VirtualClass.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\StudentPortal\VirtualClass.aspx.cs">
-      <DependentUpon>VirtualClass.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\StudentPortal\VirtualClass.aspx.designer.cs">
-      <DependentUpon>VirtualClass.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\VirtualClassroom\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\VirtualClassroom\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\VirtualClassroom\VirtualClass.aspx.cs">
-      <DependentUpon>VirtualClass.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\VirtualClassroom\VirtualClass.aspx.designer.cs">
-      <DependentUpon>VirtualClass.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInterface\VirtualClassroom\VirtualClass.Master.cs">
-      <DependentUpon>VirtualClass.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInterface\VirtualClassroom\VirtualClass.Master.designer.cs">
-      <DependentUpon>VirtualClass.Master</DependentUpon>
-    </Compile>
+    <Content Include="UserInterface\Common\misc\check-exists.php" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\connector.php" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\elFinder.class.php" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\elFinderConnector.class.php" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\elFinderVolumeDriver.class.php" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\elFinderVolumeLocalFileSystem.class.php" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\elFinderVolumeMySQL.class.php" />
+    <Content Include="UserInterface\Common\misc\elfinder-connector\mime.types" />
+    <Content Include="UserInterface\Common\misc\uploadify.php" />
+    <Content Include="UserInterface\Common\php-version\blank.php" />
+    <Content Include="UserInterface\Common\php-version\calendar.php" />
+    <Content Include="UserInterface\Common\php-version\chart.php" />
+    <Content Include="UserInterface\Common\php-version\error.php" />
+    <Content Include="UserInterface\Common\php-version\file-manager.php" />
+    <Content Include="UserInterface\Common\php-version\footer.php" />
+    <Content Include="UserInterface\Common\php-version\form.php" />
+    <Content Include="UserInterface\Common\php-version\gallery.php" />
+    <Content Include="UserInterface\Common\php-version\grid.php" />
+    <Content Include="UserInterface\Common\php-version\header.php" />
+    <Content Include="UserInterface\Common\php-version\icon.php" />
+    <Content Include="UserInterface\Common\php-version\index.php" />
+    <Content Include="UserInterface\Common\php-version\login.php" />
+    <Content Include="UserInterface\Common\php-version\table.php" />
+    <Content Include="UserInterface\Common\php-version\tour.php" />
+    <Content Include="UserInterface\Common\php-version\typography.php" />
+    <Content Include="UserInterface\Common\php-version\ui.php" />
     <Content Include="UserInterface\StaffPortal\Staff.Master" />
     <Content Include="UserInterface\StudentPortal\Student.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Logic\StaffPortal\" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
-    <Content Include="UserInterface\VirtualClassroom\VirtualClass.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <PropertyGroup>

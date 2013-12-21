@@ -2,8 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+<<<<<<< HEAD
+=======
 <asp:Content ID="Content2" ContentPlaceHolderID="pageTitle" runat="server">
     Virtual Class
+</asp:Content>
+>>>>>>> d8f15a2844b6e27919c42361543a725608ec8ae3
 
 <asp:Content ID="Content3" ContentPlaceHolderID="form" runat="server">
     <div id="main_content" style="width: 80%; float: left; margin-left: 30px">

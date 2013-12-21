@@ -9,6 +9,7 @@ using System.Data;
 using CMS.Logic.Database;
 using CMS.Logic;
 using MySql.Data.MySqlClient;
+using System.Collections;
 
 namespace CMS.UserInterface.StaffPortal
 {
@@ -43,6 +44,39 @@ namespace CMS.UserInterface.StaffPortal
             String qry = "call AddVideo('" + Text_title.Text + "', '" + ddlClass.SelectedItem.Text + "', '" + Text_key.Text + "', '" + Text_description.Text + "', '" + func.getStaffId(Session["UserID"].ToString()) + "');";
             dbc.executeIUDQuery(qry);
             Response.Redirect("Staff-home.aspx");
+            
+        }
+        [System.Web.Services.WebMethod]
+        public static ArrayList loadDeptCheckboxes()
+        {
+            ArrayList list = new ArrayList();
+            String qry = "select id,dept_name from dept_master";
+            MySqlConnection con = new MySqlConnection("server=localhost;User Id=root;Password=root;database=cms");
+            MySqlCommand cmd = new MySqlCommand(qry, con);
+            cmd.CommandType = CommandType.Text;
+            //cmd.Parameters.AddWithValue("@condition", className);
+            cmd.CommandText = qry;
+            cmd.Connection = con;
+            con.Open();
+            MySqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                list.Add(new ListItem(sdr["id"].ToString(), sdr["dept_name"].ToString()));
+            }
+            con.Close();
+            return list;
+        }
+
+        protected void populateCheckBoxes(object sender, EventArgs e)
+        {
+            if(ddlClass.SelectedItem.Text == "Create New Class")
+            {
+                DataTable dt = dbc.executeSelectQueryWithDT("select id,dept_name from dept_master");
+                CheckBox_dept.DataTextField = "dept_name";
+                CheckBox_dept.DataValueField = "id";
+                CheckBox_dept.DataSource = dt;
+                CheckBox_dept.DataBind();
+            }
         }
     }
 
