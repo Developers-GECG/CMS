@@ -7,28 +7,24 @@ using System.Data;
 
 namespace CMS.Logic.Database
 {
-    public class DBConnect
+    public class DBConnect:DBConfig
     {
-        private String host;
-        private int port;
-        private String connectionString;
+        
         public MySqlConnection con;
         public MySqlCommand cmd;
         public MySqlDataAdapter dataAdapter;
         public DataTable dataTable;
         private DataRow dataRow;
         String qry;
+        private String conStr;
 
-        public DBConnect(String conStr)
+        public DBConnect()
         {
-            this.setConnectionString(conStr);
+            this.conStr = ConnectionString();
             this.con = new MySqlConnection(conStr);
+            //Console.WriteLine(GetConnectionString());
         }
 
-        public void setConnectionString(String con_string)
-        {
-            this.connectionString = con_string;
-        }
         public void openConnection()
         {
             this.con.Open();

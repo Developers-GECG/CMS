@@ -10,7 +10,6 @@ namespace CMS
 {
     public partial class Login : System.Web.UI.Page
     {
-        private String connString = "server=localhost;User Id=root;Password=root;database=cms";
         private LoginTasks loginTasks;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -29,7 +28,7 @@ namespace CMS
         }
         protected void Submit_Click(object sender, EventArgs e)
         {
-            loginTasks = new LoginTasks(connString);
+            loginTasks = new LoginTasks();
             Boolean flag = true;
             if (ddlLogInAs.Text == "Staff") flag = !flag;
             // Boolean i = loginTasks.checkLogin(username.Text, pwd.Text, flag);

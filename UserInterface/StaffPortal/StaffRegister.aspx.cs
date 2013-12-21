@@ -13,7 +13,7 @@ namespace CMS.UserInterface.VirtualClassroom.StaffPortal
 {
     public partial class StaffRegister : System.Web.UI.Page
     {
-        DBConnect dbc = new DBConnect("server=localhost;User Id=root;Password=root;database=cms");
+        DBConnect dbc = new DBConnect();
         protected void Page_Load(object sender, EventArgs e)
         {
 

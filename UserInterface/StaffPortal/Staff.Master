@@ -225,8 +225,8 @@
     <script type="text/javascript" src="../Common/js/bootstrap-typeahead.js"></script>
     <!-- tour library -->
     <script type="text/javascript" src="../Common/js/bootstrap-tour.js"></script>
-    <!-- library for cookie management -->
-    <script type="text/javascript" src="../Common/js/jquery.cookie.js"></script>
+    <!-- library for cookie management
+    <script type="text/javascript" src="../Common/js/jquery.cookie.js"></script> -->
     <!-- calander plugin -->
     <script type="text/javascript" src='../Common/js/fullcalendar.min.js'></script>
     <!-- data table plugin -->
