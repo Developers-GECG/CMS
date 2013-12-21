@@ -68,6 +68,7 @@
     <Content Include="bin\CMS.dll" />
     <Content Include="bin\CMS.pdb" />
     <Content Include="bin\MySql.Data.dll" />
+    <Content Include="UserInterface\Config.aspx" />
     <Content Include="UserInterface\Login.aspx" />
     <Content Include="UserInterface\StaffPortal\AddClass.aspx" />
     <Content Include="UserInterface\StaffPortal\AddFile.aspx" />
@@ -308,6 +309,9 @@
     <Content Include="UserInterface\Common\js\jquery.raty.min.js" />
     <Content Include="UserInterface\Common\js\jquery.uniform.min.js" />
     <Content Include="UserInterface\Common\js\jquery.uploadify-3.1.min.js" />
+    <Content Include="UserInterface\StudentPortal\VirtualClass.aspx" />
+    <Content Include="UserInterface\VirtualClassroom\index.aspx" />
+    <Content Include="UserInterface\VirtualClassroom\VirtualClass.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -317,11 +321,25 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\Database\DBConfig.cs" />
     <Compile Include="Logic\Functions.cs" />
     <Compile Include="Logic\Login\LoginTasks.cs" />
     <Compile Include="Logic\Database\DBConnect.cs" />
     <Compile Include="Logic\StudentPortal\StudentPortal.cs" />
     <Compile Include="Logic\VirtualClassroom\Video.cs" />
+    <Compile Include="Logic\VirtualClassroom\VirtualClass.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\Config.aspx.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\Config.aspx.designer.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -332,6 +350,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserInterface\StaffPortal\AddClass.aspx.cs">
       <DependentUpon>AddClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserInterface\StaffPortal\AddClass.aspx.designer.cs">
       <DependentUpon>AddClass.aspx</DependentUpon>
@@ -359,6 +378,7 @@
     </Compile>
     <Compile Include="UserInterface\StaffPortal\simple.aspx.cs">
       <DependentUpon>simple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserInterface\StaffPortal\simple.aspx.designer.cs">
       <DependentUpon>simple.aspx</DependentUpon>
@@ -386,6 +406,7 @@
     </Compile>
     <Compile Include="UserInterface\StaffPortal\VirtualClass.aspx.cs">
       <DependentUpon>VirtualClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserInterface\StaffPortal\VirtualClass.aspx.designer.cs">
       <DependentUpon>VirtualClass.aspx</DependentUpon>
@@ -404,6 +425,34 @@
     <Compile Include="UserInterface\StudentPortal\Student.Master.designer.cs">
       <DependentUpon>Student.Master</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\StudentPortal\VirtualClass.aspx.cs">
+      <DependentUpon>VirtualClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StudentPortal\VirtualClass.aspx.designer.cs">
+      <DependentUpon>VirtualClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\VirtualClassroom\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\VirtualClassroom\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\VirtualClassroom\VirtualClass.aspx.cs">
+      <DependentUpon>VirtualClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\VirtualClassroom\VirtualClass.aspx.designer.cs">
+      <DependentUpon>VirtualClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\VirtualClassroom\VirtualClass.Master.cs">
+      <DependentUpon>VirtualClass.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInterface\VirtualClassroom\VirtualClass.Master.designer.cs">
+      <DependentUpon>VirtualClass.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="UserInterface\StudentPortal\Student.Master" />
@@ -411,7 +460,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Logic\StaffPortal\" />
-    <Folder Include="UserInterface\VirtualClassroom\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UserInterface\VirtualClassroom\VirtualClass.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

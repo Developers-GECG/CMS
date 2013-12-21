@@ -18,8 +18,8 @@ namespace CMS.UserInterface.StaffPortal
     {
 
         private String connString = "server=localhost;User Id=root;Password=root;database=cms";
-        Functions func = new Functions("server=localhost;User Id=root;Password=root;database=cms");
-        DBConnect dbc = new DBConnect("server=localhost;User Id=root;Password=root;database=cms");
+        Functions func = new Functions();
+        DBConnect dbc = new DBConnect();
         String qry;
         public String defaultKey = "http://d26qa89x3cppxu.cloudfront.net/yt.html#id=mk48xRzuNvA&height=385px&width=640px";
         public String defaultDescription = "This is player content";

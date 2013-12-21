@@ -17,9 +17,9 @@ namespace CMS.Logic.Login
         String qry;
         String name;
 
-        public LoginTasks(String connString)
+        public LoginTasks()
         {
-            dbc = new DBConnect(connString);
+            dbc = new DBConnect();
         }
 
         public Boolean checkLogin(String username, String pwd, Boolean flag)

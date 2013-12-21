@@ -33,7 +33,7 @@ namespace CMS.UserInterface.StaffPortal
         }
         public void Button_Click(object sender, EventArgs e)
         {
-            dbc = new DBConnect(connString);
+            dbc = new DBConnect();
             dbc.openConnection();
             dt = dbc.executeSelectQueryWithDT("Select * from cms.video_master where class_id = 1");
             rep1.DataSource = dt;

@@ -13,7 +13,7 @@ namespace CMS.Logic.VirtualClassroom
         public DataTable poplateVirtualClass()
         {
             String qry = "Select id,title from CMS.virtualclass_master";
-            dbc = new DBConnect("server=localhost;User Id=root;password=root;database=cms;");
+            dbc = new DBConnect();
             return dbc.executeSelectQueryWithDT(qry);
         }
     }
