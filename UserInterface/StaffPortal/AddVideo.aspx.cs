@@ -15,8 +15,8 @@ namespace CMS.UserInterface.StaffPortal
     public partial class AddVideo : System.Web.UI.Page
     {
         private DataTable dt;
-        public Functions func = new Functions("server=localhost;User Id=root;Password=root;database=cms");
-        private DBConnect dbc = new DBConnect("server=localhost;User Id=root;Password=root;database=cms");
+        public Functions func = new Functions();
+        private DBConnect dbc = new DBConnect();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)

@@ -17,9 +17,9 @@ namespace CMS.Logic
     {
         DBConnect dbc;
         public DataTable dt;
-        public Functions(String con_string)
+        public Functions()
         {
-            dbc = new DBConnect(con_string);
+            dbc = new DBConnect();
         }
         public void fillDropdownlist(DropDownList ddl, String qry, String id, String title)
         {
